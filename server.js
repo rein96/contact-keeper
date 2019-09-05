@@ -10,7 +10,6 @@ connectDB();
 // Init Middleware (similar to bodyparser)
 app.use(express.json( { extended:false } )) // TO accept body data ?
 
-app.get('/', (req, res) => res.json( { msg: 'Welcome to the ContactKeeper API !' } ) );
 
 // Define Routes (connected with Routes folder)
 app.use('/api/users', require('./routes/users'))
